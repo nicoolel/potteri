@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap);
+
 * {
   box-sizing: border-box;
 }
@@ -13,6 +15,7 @@ html, body, div, img {
 
 body {
   line-height: 1;
+  font-family: 'Poppins', sans-serif;
 }
 
 .App {
@@ -58,14 +61,10 @@ body {
 
 .nav {
   display: flex;
-  height: 150px;
+  height: 90px;
   border-bottom: 1px solid grey;
   box-shadow: 5px 0 darkgrey;
   background-color: rgb(245, 244, 240	);
-}
-
-.nav-img {
-  height: 125px;
 }
 
 .nav-img:hover {
@@ -74,12 +73,11 @@ body {
 
 /* main */
 
-.main {
+.img-gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 5px;
-  margin: 0 1.4%; 
 }
 
 .main-imgs {
@@ -87,4 +85,53 @@ body {
   margin: 5px;
   width: 300px;
   height: 300px;
+}
+
+.experiences {
+  margin-left: 4%;
+  font-size: 1.3rem;
+}
+
+/* card */
+
+.card {
+  position: relative;
+  margin-left: 2%;
+  margin-top: 1%;
+}
+
+.card img {
+  border-radius: 5px 5px;
+}
+
+.card > span {
+  position: absolute;
+  top: 10px;
+  left: 7px;
+  background-color: white;
+  padding: 3px 10px;
+  border-radius: 5px 5px
+}
+
+.rating {
+  display: flex;
+  align-items: flex-end;
+  padding-top: .3em;
+}
+
+.reviewNumber{
+  color: grey;
+  margin-left: 1%;
+}
+
+.country {
+  margin-left: 0.5%;
+}
+
+.price span {
+  font-weight: bolder;
+}
+
+.star {
+  margin-right: .5em;
 }
