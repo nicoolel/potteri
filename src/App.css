@@ -37,8 +37,10 @@ body {
 .img-gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   padding: 5px;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 .main-imgs {
@@ -55,7 +57,7 @@ body {
 
 /* card */
 
-.cards-list {
+.card-list {
   display: flex;
   flex-wrap: nowrap;
   gap: 20px;
@@ -64,14 +66,16 @@ body {
 
 .card {
   position: relative;
-  margin-left: 2%;
+  margin-left: 4%;
   margin-top: 1%;
-  flex: 0 0 auto;         /* ADD */
+  flex: 0 0 20%;         /* ADD */
   display: flex;          /* ADD */
   flex-direction: column; /* ADD */
+  justify-content: space-around;
+  border: 1px solid red;
 }
 
-.card img {
+.card-img {
   border-radius: 5px 5px;
   height: 400px;
   width: 300px;
@@ -104,6 +108,7 @@ body {
 .courseTitle {
   overflow: hidden;
   text-overflow: ellipsis;
+  max-width: 80%;
 }
 
 .price span {
@@ -114,4 +119,19 @@ body {
   margin-right: .5em;
   max-width: 20px;
   max-height: 20px;
+}
+
+@media only screen and (max-width: 1300px){
+
+  .main-imgs {
+    border-radius: 12px;
+    margin: 5px;
+    width: 30vh;
+    height: 30vh;
+  }
+  .card-list {
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+  }
 }
